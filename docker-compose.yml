@@ -1,7 +1,7 @@
 services:
-  aps1_tree:
+  aps2_graph:
     build: .
-    container_name: aps1_tree
+    container_name: aps2_graph
     stdin_open: true
     tty: true
     volumes:

@@ -21,7 +21,7 @@ INC_DIR  := include
 INC_DIRS := $(INC_DIR) $(dir $(call rwildcard,$(INC_DIR),*/))
 INCLUDES := $(addprefix -I,$(INC_DIRS))
 
-PROJECT_NAME := aps1_tree
+PROJECT_NAME := aps2_graph
 TARGET   := build/$(PROJECT_NAME)$(TARGET_EXT)
 SRC_DIR  := src
 OBJ_DIR  := build/obj

@@ -16,3 +16,16 @@ BinaryTree* tree_delete(BinaryTree* root, void* data, CompareFn compare);
 
 BinaryTree* tree_search_avl(BinaryTree* root, void* data, CompareFn compare);
 BinaryTree* tree_search_linear(BinaryTree* root, void* data, CompareFn compare);
+
+#define MAX_NODES 20
+
+typedef struct Graph {
+    int num_nodes;
+    int adj_matrix[MAX_NODES][MAX_NODES];
+    int time_matrix[MAX_NODES][MAX_NODES];
+    int toll_matrix[MAX_NODES][MAX_NODES];
+} Graph;
+
+Graph* create_graph(int num_nodes);
+void print_graph(Graph* g);
+void dijkstra(Graph* g, int start, int end, int criteria);
