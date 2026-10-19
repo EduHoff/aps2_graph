@@ -1,4 +1,4 @@
-# aps1_tree
+# aps2_graph
 
 Documentação rápida de compilação e execução do projeto.
 
@@ -35,7 +35,7 @@ docker compose up --build
 
 Iniciar:
 ```
-docker compose run --rm aps1_tree
+docker compose run --rm aps2_graph
 ```
 
 Encerrar:
